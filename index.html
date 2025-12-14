@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Progress Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Student Progress Tracker</h2>
+
+    <label>Student Name</label>
+    <input type="text" id="name" />
+
+    <label>Class</label>
+    <input type="text" id="cls" />
+
+    <label>Roll Number</label>
+    <input type="text" id="roll" />
+
+    <label>Number of Subjects</label>
+    <input type="number" id="subCount" />
+
+    <button onclick="generateFields()">Enter Marks</button>
+
+    <div id="marksArea"></div>
+
+    <button id="calcBtn" style="display:none;" onclick="calculateReport()">Generate Report</button>
+
+    <div id="reportBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
